@@ -466,7 +466,7 @@ determined by the positivity of N.
 
 (defun latex/beginning-of-line ()
   "Do `LaTeX-back-to-indentation' or `beginning-of-line'."
-  (interactive)
+  (interactive "^")
   (let ((o (point)))
     (if visual-line-mode
         (beginning-of-visual-line)
