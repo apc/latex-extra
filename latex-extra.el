@@ -130,7 +130,7 @@
 (require 'tex)
 (require 'latex)
 (unless (string-prefix-p "13" AUCTeX-version)
-  (require 'tex-buf))
+  (require 'tex-buf nil t))
 (require 'texmathp)
 (require 'cl-lib)
 (require 'outline)
