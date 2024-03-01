@@ -129,8 +129,8 @@
 
 (require 'tex)
 (require 'latex)
-(unless (string-prefix-p "13" AUCTeX-version)
-  (require 'tex-buf nil t))
+(when (version< AUCTeX-version "13")
+  (require 'tex-buf))
 (require 'texmathp)
 (require 'cl-lib)
 (require 'outline)
